@@ -4,7 +4,8 @@ var allData = [];
 var query = 'https://api.europeana.eu/record/v2/search.json?query=(soviet+OR+socialist+OR+russia+OR+russian)+AND+(poster)&reusability=open,restricted,permission&media=true&wskey=HcXsJWS7b';
 //Sets how many posters to display
 //Please note it takes time to load 1000 items
-var maxElements = 1000;
+//In this test version only 100 posters will be displayed
+var maxElements = 100;
 
 //Downloading all the elements
 async function downloadElements(rows = maxElements, cursor = '*') {
