@@ -1,7 +1,8 @@
 window.onscroll = function() {myScrollFunction()};
 
 var allData = [];
-var query = 'https://api.europeana.eu/record/v2/search.json?query=(soviet+OR+socialist+OR+russia+OR+russian)+AND+(poster)&reusability=open,restricted,permission&media=true&wskey=HcXsJWS7b';
+const apiKey = process.env.API_KEY;
+var query = 'https://api.europeana.eu/record/v2/search.json?query=(soviet+OR+socialist+OR+russia+OR+russian)+AND+(poster)&reusability=open,restricted,permission&media=true&wskey=${apiKey}';
 //Sets how many posters to display
 //Please note it takes time to load 1000 items
 //In this test version only 500 posters will be displayed
