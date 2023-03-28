@@ -2,7 +2,7 @@ window.onscroll = function() {myScrollFunction()};
 
 var allData = [];
 
-const apiKey = process.env.API_KEY;
+const apiKey = window.env.API_KEY;
 var query = `https://api.europeana.eu/record/v2/search.json?query=(soviet+OR+socialist+OR+russia+OR+russian)+AND+(poster)&reusability=open,restricted,permission&media=true&wskey=${apiKey}`;
 
 //Sets how many posters to display
